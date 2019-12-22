@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void irASecondActivity(View view) {
         Toast.makeText(MainActivity.this, "yendo a página 2", Toast.LENGTH_SHORT).show();
         Intent intent2activity = new Intent(this, SecActivity.class);
+        intent2activity.putExtra("numero", 5);
+        intent2activity.putExtra("nombre", "Diegolas");
         startActivity(intent2activity);
     }
 

@@ -12,6 +12,11 @@ public class SecActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sec);
+
+        Bundle parametros = getIntent().getExtras();
+        int numero = parametros.getInt("numero");
+        String nombre = parametros.getString("nombre");
+        Toast.makeText(this, nombre, Toast.LENGTH_LONG).show();
     }
 
     public void mostrarMensaje(View view) {
