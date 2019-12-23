@@ -10,28 +10,28 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView texto;
+    TextView tituloMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        texto = findViewById(R.id.tituloMain);
-        texto.setOnClickListener(this);
+        tituloMain = findViewById(R.id.tituloMain); //recupera el elemento por ID y
+        tituloMain.setOnClickListener(this); //le asigna manualmente un listener
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v) { //Tenemos override, habrá que gestionar con ifs que accion lanzamos
         Toast.makeText(MainActivity.this, "Hola Pepota", Toast.LENGTH_SHORT).show();
     }
 
     public void irASecondActivity(View view) {
         Toast.makeText(MainActivity.this, "yendo a página 2", Toast.LENGTH_SHORT).show();
-        Intent intent2activity = new Intent(this, SecActivity.class);
-        intent2activity.putExtra("numero", 5);
-        intent2activity.putExtra("nombre", "Diegolas");
-        startActivity(intent2activity);
+        Intent intent2activity = new Intent(this, SecActivity.class); //elegimos acti para el intent
+        intent2activity.putExtra("numero", 5); //añadimos 1 param
+        intent2activity.putExtra("nombre", "Diegolas"); //añadimos 1 param
+        startActivity(intent2activity); //lanzamos el acti
     }
 
     @Override
@@ -62,4 +62,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    public void irARelativeActivity(View view) {
+        Intent i = new Intent(this, RelativeLayoutActivity.class);
+        startActivity(i);
+
+    }
 }

@@ -3,4 +3,7 @@
     <string name="hola_world">Hola World!</string>
     <string name="pagina2">Ir a página 2</string>
     <string name="titulopagina2">Titulo Pagina 2</string>
+    <string name="botonAlarma1130">Alarma 11:30</string>
+    <string name="botonLlamar">Llamar</string>
+    <string name="gestor_de_alarmas">Gestor de Alarmas</string>
 </resources>
