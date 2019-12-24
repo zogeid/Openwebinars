@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void irA(View view) {
-        Intent i = new Intent(this, checkboxActivity.class);
+        //Intent i = new Intent(this, checkboxActivity.class);
+        Intent i = new Intent(this, ConstraintLayoutActivity.class);
         startActivity(i);
     }
 }
