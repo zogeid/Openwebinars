@@ -40,5 +40,15 @@
         app:layout_constraintRight_toRightOf="@+id/tituloMain"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button_redirecCurso"
+        android:onClick="irA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="311dp"
+        tools:layout_editor_absoluteY="19dp"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

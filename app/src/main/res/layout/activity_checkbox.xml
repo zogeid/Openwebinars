@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".checkboxActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:onClick="checkboxClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox1"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkboxClick"
+        android:text="CheckBox2" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup1">
+    <RadioButton
+        android:id="@+id/radio1"
+        android:onClick="radioClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="radio1"
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="radioClick"
+        android:text="radio2" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="whatRadio"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+</androidx.appcompat.widget.LinearLayoutCompat>

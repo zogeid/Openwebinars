@@ -22,6 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("TAG ", "on start");
+    }
+
+    @Override
     public void onClick(View v) { //Tenemos override, habrá que gestionar con ifs que accion lanzamos
         Toast.makeText(MainActivity.this, "Hola Pepota", Toast.LENGTH_SHORT).show();
     }
@@ -34,37 +40,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent2activity); //lanzamos el acti
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.i("TAG ", "on start");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i("TAG ", "on resume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
 
     public void irARelativeActivity(View view) {
         Intent i = new Intent(this, RelativeLayoutActivity.class);
         startActivity(i);
+    }
 
+    public void irA(View view) {
+        Intent i = new Intent(this, checkboxActivity.class);
+        startActivity(i);
     }
 }
