@@ -6,4 +6,12 @@
     <string name="botonAlarma1130">Alarma 11:30</string>
     <string name="botonLlamar">Llamar</string>
     <string name="gestor_de_alarmas">Gestor de Alarmas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="primer_fragment">Primer fragment</string>
+    <string name="segundoFragment">Segundo fragment</string>
+    <string name="title_activity_dinamic_fragment_basic">Dinamic Fragments</string>
+    <string name="secondFragment">Second fragment</string>
+    <string name="holaFirstFragment">First fragment</string>
 </resources>
